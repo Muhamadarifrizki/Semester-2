@@ -40,4 +40,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
 
+Route::any('register', function(){ return abort(404); });
 
+ 
