@@ -88,7 +88,7 @@ class UserController extends Controller
     {
         $result = User::find($req->id);
 
-        if ( $result->delete() ) {
+        if (  $result->delete() ) {
             return back()->with('result','delete');
         } else {
             return back()->with('result','fail-delete');
